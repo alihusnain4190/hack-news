@@ -1,9 +1,11 @@
-import React, { useContext } from "react";
-import { useGlobalContext } from "../context/context";
-const First = () => {
-  const { loading } = useGlobalContext();
-  console.log(loading);
-  return <div>hello</div>;
-};
+import React from "react";
 
+import { useGlobalContext } from "./context";
+
+const First = () => {
+  console.log(useGlobalContext());
+  const name = useGlobalContext();
+  console.log(name);
+  return <h2>stories component</h2>;
+};
 export default First;

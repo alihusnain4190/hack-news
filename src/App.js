@@ -1,12 +1,12 @@
 import "./App.css";
 import First from "./Component/First";
-import  useGlobalContext  from "./context/context";
+import  {useGlobalContext}  from "./Component/context";
 function App() {
-  const { loading } = useGlobalContext();
+  // const { isLoading } = useGlobalContext();
   return (
-    <div className="App">
+    <>
       <First />
-    </div>
+    </>
   );
 }
 
